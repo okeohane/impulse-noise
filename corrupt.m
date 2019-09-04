@@ -8,7 +8,7 @@ tot_corr_px = ceil(tot_px * corr_rate);   % # of corrupted pixels -- rounded up 
 ind = randperm(tot_px, tot_corr_px);
 [row, column] = ind2sub(size(image), ind);
 
-%array of random shades to be assigned to corrdinates
+%array of random shades to be assigned to coordinates
 shade = randi(255, tot_corr_px, 1);
 
 
